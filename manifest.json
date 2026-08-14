@@ -1,0 +1,11 @@
+{
+  "name": "Cosmic Planner",
+  "short_name": "Cosmic",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#060416",
+  "theme_color": "#09051d",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": []
+}
