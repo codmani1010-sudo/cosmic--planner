@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09051d">
+  <title>Cosmic Planner</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <aside class="sidebar">
+    <div class="brand"><span>✦</span><div><b>Cosmic</b><small>Planner</small></div></div>
+    <button class="nav active" data-view="dashboard">⌂ <span>داشبورد</span></button>
+    <button class="nav" data-view="goals">◎ <span>اهداف</span></button>
+    <button class="nav" data-view="study">▣ <span>درس و مطالعه</span></button>
+    <button class="nav" data-view="day">◷ <span>برنامه روزانه</span></button>
+    <button class="nav" data-view="habits">☆ <span>عادت‌ها</span></button>
+    <button class="nav" data-view="progress">◈ <span>پیشرفت</span></button>
+    <button class="nav" data-view="calendar">□ <span>تقویم</span></button>
+    <button class="nav" data-view="settings">⚙ <span>تنظیمات</span></button>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <button id="mobileMenu" class="icon-btn">☰</button>
+      <div>
+        <h1 id="pageTitle">داشبورد</h1>
+        <p id="greeting"></p>
+      </div>
+      <button class="icon-btn" id="quickAdd">＋</button>
+    </header>
+    <section id="app"></section>
+  </main>
+
+  <dialog id="modal">
+    <form method="dialog" id="modalForm">
+      <button class="close" value="cancel">×</button>
+      <h2 id="modalTitle"></h2>
+      <div id="modalFields"></div>
+      <button class="primary" value="save">ذخیره</button>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
